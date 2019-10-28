@@ -46,7 +46,7 @@ coverage.xml
 *.cover
 .hypothesis/
 .pytest_cache/
-
+.DS_Store
 # Translations
 *.mo
 *.pot
@@ -102,3 +102,11 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+#vscode
+.vscode
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
