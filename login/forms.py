@@ -8,7 +8,7 @@ class UserForm(forms.ModelForm):
         model = User
         fields = ('username','password','email')
 
-class UserProfileInfoForm(forms.ModelForm):
-    class Meta():
-        model = UserProfileInfo
-        fields = ('portfolio_site','portfolio_pic')
+# class UserProfileInfoForm(forms.ModelForm):
+#     class Meta():
+#         model = UserProfileInfo
+#         fields = ('portfolio_site','portfolio_pic')
