@@ -18,12 +18,11 @@ from django.urls import path, include
 from login import views
 
 urlpatterns = [
-    path('', include('home.urls')),
     path('admin/', admin.site.urls),
-    path('',views.index,name='index'),
-    path('special/',views.special,name='special'),
-    path('login/',include('login.urls')),
-    path('logout/',views.user_logout,name='logout'),
+    path('', views.index, name='index'),
+    path('special/', views.special, name='special'),
+    path('login/', include('login.urls')),
+    path('logout/', views.user_logout, name='logout'),
 ]
 
 admin.site.site_header = 'Evaluately Admin Panel'
