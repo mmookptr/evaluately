@@ -32,7 +32,7 @@ via HTTPS
 
      git clone https://github.com/mmookptr/evaluately.git
 
-## 2. Acces it
+## 2. Access it
 
      cd evaluately
 
@@ -50,7 +50,7 @@ via HTTPS
 
 ## 6.Redirect to the site from your favorite browser
 
->git  http://localhost:8000/
+> http://localhost:8000/
 
 # Member
 
