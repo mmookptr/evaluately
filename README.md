@@ -26,31 +26,31 @@ The application requires
 
 via SSH
 
-> git clone git@github.com:mmookptr/evaluately.git
+     git clone git@github.com:mmookptr/evaluately.git
 
 via HTTPS
 
-> git clone https://github.com/mmookptr/evaluately.git
+     git clone https://github.com/mmookptr/evaluately.git
 
 ## 2. Acces it
 
-> cd evaluately
+     cd evaluately
 
 ## 3.Install requirements
 
-> pip3 install -r requirements.txt
+     pip3 install -r requirements.txt
 
 ## 4.Migrate
 
-> python3 manage.py migrate
+     python3 manage.py migrate
 
 ## 5.Run Server
 
-> python3 manage.py runserver
+     python3 manage.py runserver
 
 ## 6.Redirect to the site from your favorite browser
 
-> http://localhost:8000/
+>git  http://localhost:8000/
 
 # Member
 
