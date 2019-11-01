@@ -22,7 +22,7 @@ The application requires
 
 # Installation
 
-1.  Clone this repository
+## 1.Clone this repository
 
 via SSH
 
@@ -32,23 +32,23 @@ via HTTPS
 
 > git clone https://github.com/mmookptr/evaluately.git
 
-# 2. Acces it
+## 2. Acces it
 
 > cd evaluately
 
-# 3.Install requirements
+## 3.Install requirements
 
 > pip3 install -r requirements.txt
 
-# 4.Migrate
+## 4.Migrate
 
 > python3 manage.py migrate
 
-# 5.Run Server
+## 5.Run Server
 
 > python3 manage.py runserver
 
-# 6.Redirect to the site from your favorite browser
+## 6.Redirect to the site from your favorite browser
 
 > http://localhost:8000/
 
