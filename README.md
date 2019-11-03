@@ -32,7 +32,7 @@ via HTTPS
 
      git clone https://github.com/mmookptr/evaluately.git
 
-## 2. Access it
+## 2. Accessc it
 
      cd evaluately
 
