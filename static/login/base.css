@@ -9,8 +9,9 @@
 .welcome-message {
   margin: auto;
   text-align: center;
-  margin-top: 470px;
+  margin-top:0;
 }
+
 .svg-inverted-mask {
   position: absolute;
   width: 100%;
@@ -122,6 +123,7 @@
       0 0 0 84vmax darkviolet, 0 0 0 86vmax purple, 0 0 0 88vmax crimson,
       0 0 0 90vmax red;
   }
+
   45% {
     box-shadow: 0 0 0 2vmax yellow, 0 0 0 4vmax yellowgreen,
       0 0 0 6vmax turquoise, 0 0 0 8vmax royalblue, 0 0 0 10vmax mediumslateblue,
@@ -142,6 +144,7 @@
       0 0 0 86vmax mediumslateblue, 0 0 0 88vmax mediumorchid,
       0 0 0 90vmax darkviolet;
   }
+
   75% {
     box-shadow: 0 0 0 2vmax orangered, 0 0 0 4vmax tomato, 0 0 0 6vmax gold,
       0 0 0 8vmax yellow, 0 0 0 10vmax yellowgreen, 0 0 0 12vmax turquoise,
@@ -162,6 +165,7 @@
       0 0 0 88vmax turquoise, 0 0 0 90vmax royalblue;
   }
 }
+
 @keyframes shadows-move {
   25% {
     box-shadow: 0 0 0 2vmax royalblue, 0 0 0 4vmax mediumslateblue,
@@ -183,6 +187,7 @@
       0 0 0 84vmax darkviolet, 0 0 0 86vmax purple, 0 0 0 88vmax crimson,
       0 0 0 90vmax red;
   }
+
   45% {
     box-shadow: 0 0 0 2vmax yellow, 0 0 0 4vmax yellowgreen,
       0 0 0 6vmax turquoise, 0 0 0 8vmax royalblue, 0 0 0 10vmax mediumslateblue,
@@ -203,6 +208,7 @@
       0 0 0 86vmax mediumslateblue, 0 0 0 88vmax mediumorchid,
       0 0 0 90vmax darkviolet;
   }
+
   75% {
     box-shadow: 0 0 0 2vmax orangered, 0 0 0 4vmax tomato, 0 0 0 6vmax gold,
       0 0 0 8vmax yellow, 0 0 0 10vmax yellowgreen, 0 0 0 12vmax turquoise,
@@ -240,4 +246,19 @@ body {
 .svg-defs {
   width: 0;
   height: 0;
+}
+
+.text {
+  height: 20vh;
+  background: url('./../img/ootl93.gif');
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  width: 100%;
+  text-align: center;
+  margin-top: 200px;
+  -webkit-background-clip: text;
+  font-size: 100px;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, .2);
 }
