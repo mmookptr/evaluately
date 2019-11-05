@@ -1,0 +1,72 @@
+.welcome-message {
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(0, 51, 102);
+  margin-top: 6px;
+  /* text-transform: lowercase; */
+}
+
+.logo {
+  margin-top: 0px;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: white;
+  font: 14.5em/1 Open Sans, Impact;
+  margin: 0;
+}
+
+.text {
+  height: 80%;
+  background: url('./../img/ootl93.gif');
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  width: 100%;
+  text-align: center;
+  margin-top: 200px;
+  -webkit-background-clip: text;
+  font-size: 50px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, .2);
+}
+
+@media screen and (min-width: 425px) {
+  .text {
+    height: 80%;
+    background: url('./../img/ootl93.gif');
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+    -webkit-background-clip: text;
+    font-size: 100px;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0);
+  }
+}
+
+.btn.btn-primary.btn-lg {
+  background-color: rgb(0, 51, 102);
+  color: white !important;
+  border-color: rgb(0, 51, 102);
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.navbar-link{
+  color: gray;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
