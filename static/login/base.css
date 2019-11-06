@@ -64,9 +64,30 @@ body {
   margin-top: 20px;
 }
 
-.navbar-link{
+.navbar-link {
   color: gray;
   margin-right: 20px;
   margin-left: 20px;
+}
+
+.loginbox {
+  width: 70% !important;
+  margin: auto;
+
+}
+
+.jumbotron {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+  background-color:rgb(86, 115, 154) !important;
+  color: white;
+}
+
+input[type=submit] {
+    border-radius: 20px;
+    width: 30%;
+    padding: 10px 32px;
 }
 
