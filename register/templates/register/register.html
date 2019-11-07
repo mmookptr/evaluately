@@ -2,16 +2,25 @@
 <html>
 <body>
 
-<h2>Sign up</h2>
+<h2>Registeration</h2>
 <form action='{% url "register:form" %}' method="post">
   {% csrf_token %}
   <label for="your_name">Your name: </label>
   <input id="your_name" type="text" name="your_name" value="{{ username }}">
   <br>
+  <br>
   <label for="password">Password: </label>
   <input id="your_password" type="text" name="your_password" value="{{ password }}">
-  <input type="submit" value="OK">
+  <br>
+  <br>
+  <label for="confirm_password">Confirm Password: </label>
+  <input id="confirm_password" type="text" name="confirm_password" value="{{ confirmpassword }}">
+    {% if your_password != confirm_password %}
+      <h6>The Password doesn't match.</h6>
+    {% endif %}
+  <br>
+  <br>
+  <input type="submit" value="Register">
 </form>
 </body>
 </html>
-
