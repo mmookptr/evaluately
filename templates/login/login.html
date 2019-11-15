@@ -3,7 +3,7 @@
 
 <div class="container">
     <div class="jumbotron">
-        <h1>Login</h1>
+        <h1>Welcome to Evaluately</h1>
         {% comment %} <form method="post" action="{% url 'login:user_login' %}">
             {% csrf_token %}
             <input type="text" name="username" placeholder="Username" class="form-control loginbox">
@@ -21,6 +21,9 @@
                 <input type="password" name="password" class="form-control loginbox" placeholder="Password">
             </div>
             <input type="submit" name="" value="Login" class="">
+            <button class="adminlogin">
+                <a class="adminbutton" href="{%url 'admin:index'%}">admin</a>
+            </button>
             <div>
                 <p>Haven't got an account? <a href=""> Register</a></p>           
              </div>
