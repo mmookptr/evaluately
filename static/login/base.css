@@ -11,6 +11,7 @@
 .logo {
   margin-top: 0px;
 }
+
 html,
 body {
   height: 100%;
@@ -30,7 +31,7 @@ body {
   background-clip: text;
   width: 100%;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 170px;
   -webkit-background-clip: text;
   font-size: 50px;
   font-weight: bolder;
@@ -121,4 +122,5 @@ input[type="submit"] {
 
 .adminbutton {
     color: rgb(0, 51, 102) !important;
+
 }

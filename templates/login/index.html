@@ -1,8 +1,6 @@
 {% extends 'login/base.html' %}
 {% block body_block %}
-<p class="text">
-    Evaluately
-</p>
+<p class="text">Evaluately</p>
 <div class="welcome-message">
     {% if user.is_authenticated %}
         <h2>Hello {{user.username}}</h2>
