@@ -15,22 +15,22 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import url
-from django.urls import path,include
-from register import views
-from login import views
+from django.urls import path, include
+from register import views as register_views
+from login import views as login_views
+from django.contrib.auth import views as auth_views
 
-
-
-
+app_name = "evaluately"
 
 urlpatterns = [
 
+    path('admin/logout/', login_views.user_logout),
     path('admin/', admin.site.urls),
-    path('register/',include('register.urls')),
-    path('',views.index,name='index'),
-    path('special/', views.special, name='special'),
+    path('register/', include('register.urls')),
+    path('', login_views.index, name='index'),
+    path('special/', login_views.special, name='special'),
     path('login/', include('login.urls')),
-    path('logout/', views.user_logout, name='logout'),
+    # path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     # path('oauth/',include('social_django.urls', namespace='social'))
 ]
 
