@@ -27,11 +27,10 @@ urlpatterns = [
     path('admin/logout/', login_views.user_logout),
     path('admin/', admin.site.urls),
     path('register/', include('register.urls')),
-    path('', login_views.index, name='index'),
+    path('home/', login_views.index, name='index'),
     path('special/', login_views.special, name='special'),
     path('login/', include('login.urls')),
-    # path('logout/', auth_views.LogoutView.as_view(), name='logout'),
-    # path('oauth/',include('social_django.urls', namespace='social'))
+    path('oauth/',include('social_django.urls', namespace='social')),
 ]
 
 admin.site.site_header = 'Evaluately Admin Panel'
