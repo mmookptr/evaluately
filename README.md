@@ -1,6 +1,6 @@
 # Evaluately
 
-[![Actions Status](https://github.com/mmookptr/evaluately/workflows/integration-tests/badge.svg)](https://github.com/mmookptr/evaluately/actions)
+[![Actions Status](https://github.com/mmookptr/evaluately/workflows/Python%20application/badge.svg)](https://github.com/mmookptr/evaluately/actions)
 
 > This repository is part of ISP2019 course
 
