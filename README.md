@@ -1,5 +1,7 @@
 # Evaluately
 
+[![Actions Status](https://github.com/mmookptr/evaluately/workflows/integration-tests/badge.svg)](https://github.com/mmookptr/evaluately/actions)
+
 > This repository is part of ISP2019 course
 
 # Project description
@@ -58,6 +60,10 @@ via HTTPS
 - Patteera Likitamnuayporn (Designer, Coder)
 - Nattaphon Rakprokobkij (Director ,Coder)
 - Pakkapol Visuttitewin (Qa manager, Coder)
+
+## CI using Github Actions
+
+https://github.com/mmookptr/evaluately/actions
 
 ## Trello Board URL
 
