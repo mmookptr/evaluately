@@ -20,7 +20,7 @@ def get_name(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('/home/')
+            return HttpResponseRedirect('/')
 
     else:
         form = NameForm()
