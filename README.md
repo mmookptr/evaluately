@@ -70,7 +70,7 @@ https://github.com/mmookptr/evaluately/actions
 https://trello.com/b/bICn1NIa/evaluately
 
 ## Project Backlog URL
-(https://docs.google.com/document/d/1tbbW8fQMx2SEDQTjB0Jtj4mknjqA_rKx_tdUeCVFEqs/edit#heading=h.e1kzr3qblvqo)
+[Iteration Plans](https://docs.google.com/document/d/1tbbW8fQMx2SEDQTjB0Jtj4mknjqA_rKx_tdUeCVFEqs/edit#heading=h.e1kzr3qblvqo)
 
 ## Iteration Retrospective
 
