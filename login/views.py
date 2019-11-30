@@ -21,7 +21,6 @@ def user_logout(request):
     # return HttpResponseRedirect(reverse('index'))
     return redirect(reverse('login:user_login'))
 
-
 def user_login(request):
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -40,3 +39,4 @@ def user_login(request):
             return HttpResponse("Invalid login details given")
     else:
         return render(request, "login/login.html", {})
+

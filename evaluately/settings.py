@@ -141,7 +141,20 @@ MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 
 LOGIN_URL = '/login/user_login/'
-LOGIN_URL = 'login'
-LOGIN_REDIRECT_URL = 'home'
+# LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'index'
 LOGOUT_URL = 'logout'
-LOGOUT_REDIRECT_URL = 'login'
+# LOGOUT_REDIRECT_URL = 'login'
+
+SOCIAL_AUTH_FACEBOOK_KEY = '1564872793652319'
+SOCIAL_AUTH_FACEBOOK_SECRET = '6c803aea3c356da3bda64f2e8bcbdaac'
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'user_link']
+SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
+      'fields': 'id, name, email, picture.type(large), link'
+    }
+SOCIAL_AUTH_FACEBOOK_EXTRA_DATA = [
+        ('name', 'name'),
+        ('email', 'email'),
+        ('picture', 'picture'),
+        ('link', 'profile_url'),
+    ]
