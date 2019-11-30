@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-
+from decouple import config
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
@@ -23,10 +23,9 @@ MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'an7$et5*ij#n23we#d(daq=gyhk5ezm)=93midlsmb)6yv2az7'
-
+SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG',cast=bool)
 
 ALLOWED_HOSTS = []
 
@@ -86,7 +85,7 @@ WSGI_APPLICATION = 'evaluately.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, config('DATABASES')),
     }
 }
 
@@ -110,8 +109,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 AUTHENTICATION_BACKENDS = (
-    'social_core.backends.twitter.TwitterOAuth',
+    # 'social_core.backends.twitter.TwitterOAuth',
     'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.google.GoogleOAuth2',
 
     'django.contrib.auth.backends.ModelBackend',
 )
@@ -122,7 +122,7 @@ AUTHENTICATION_BACKENDS = (
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'GMT'
+TIME_ZONE = config('TIME_ZONE')
 
 USE_I18N = True
 
@@ -146,8 +146,8 @@ LOGIN_REDIRECT_URL = 'index'
 LOGOUT_URL = 'logout'
 # LOGOUT_REDIRECT_URL = 'login'
 
-SOCIAL_AUTH_FACEBOOK_KEY = '1564872793652319'
-SOCIAL_AUTH_FACEBOOK_SECRET = '6c803aea3c356da3bda64f2e8bcbdaac'
+SOCIAL_AUTH_FACEBOOK_KEY = config('FACEBOOK_KEY')
+SOCIAL_AUTH_FACEBOOK_SECRET = config('FACEBOOK_SECRET')
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'user_link']
 SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
       'fields': 'id, name, email, picture.type(large), link'
@@ -158,3 +158,6 @@ SOCIAL_AUTH_FACEBOOK_EXTRA_DATA = [
         ('picture', 'picture'),
         ('link', 'profile_url'),
     ]
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = config('GOOGLE_KEY')
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = config('GOOGLE_SECRET')
