@@ -1,9 +1,8 @@
 {% extends 'login/base.html' %}
 {% block body_block %}
 
-<div class="container">
-    <div class="jumbotron">
-        <h1>Welcome to Evaluately</h1>
+<p class="text">Evaluately</p>
+    <div class="welcome-message">
         {% if user.is_authenticated %}
             <h2>Hello {{user.username}}</h2>
             {% for ass in backends.associated %}
@@ -24,8 +23,43 @@
                 </button>
             </div>
         {% else %}
-            <h2>Please Register or Login</h2>
+        <div>
+            <p>Welcome to Evaluately,</p>
+        </div>
+        <div>
+            <p>please login or register.</p>
+        </div>
+        <a href="{% url 'login:user_login' %}">
+            <button type="button" class="btn btn-primary btn-lg">login</button>
+        </a>
+        <a href="/register/">
+            <button type="button" class="btn btn-primary btn-lg">register</button>
+        </a>
         {% endif %}
     </div>
 </div>
 {% endblock %}
+
+
+{% comment %} {% extends 'login/base.html' %}
+{% block body_block %}
+<p class="text">Evaluately</p>
+<div class="welcome-message">
+    {% if user.is_authenticated %}
+        <h2>Hello {{user.username}}</h2>
+    {% else %}
+        <div>
+        <p>Welcome to Evaluately,</p>
+        </div>
+        <div>
+        <p>please login or register.</p>
+        </div>
+        <a href="{% url 'login:user_login' %}">
+            <button type="button" class="btn btn-primary btn-lg">login</button>
+        </a>
+        <a href="/register/">
+            <button type="button" class="btn btn-primary btn-lg">register</button>
+        </a>
+    {% endif %} 
+</div>
+{% endblock %} {% endcomment %}
