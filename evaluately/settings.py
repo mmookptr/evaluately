@@ -146,18 +146,6 @@ LOGIN_REDIRECT_URL = 'index'
 LOGOUT_URL = 'logout'
 # LOGOUT_REDIRECT_URL = 'login'
 
-SOCIAL_AUTH_FACEBOOK_KEY = config('FACEBOOK_KEY')
-SOCIAL_AUTH_FACEBOOK_SECRET = config('FACEBOOK_SECRET')
-SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'user_link']
-SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
-      'fields': 'id, name, email, picture.type(large), link'
-    }
-SOCIAL_AUTH_FACEBOOK_EXTRA_DATA = [
-        ('name', 'name'),
-        ('email', 'email'),
-        ('picture', 'picture'),
-        ('link', 'profile_url'),
-    ]
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = config('GOOGLE_KEY')
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = config('GOOGLE_SECRET')
