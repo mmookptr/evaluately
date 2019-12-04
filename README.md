@@ -1,5 +1,7 @@
 # Evaluately
 
+[![Actions Status](https://github.com/mmookptr/evaluately/workflows/Python%20application/badge.svg)](https://github.com/mmookptr/evaluately/actions)
+
 > This repository is part of ISP2019 course
 
 # Project description
@@ -32,7 +34,7 @@ via HTTPS
 
      git clone https://github.com/mmookptr/evaluately.git
 
-## 2. Accessc it
+## 2. Access it
 
      cd evaluately
 
@@ -57,10 +59,19 @@ via HTTPS
 - Sidtipat Kietchai (Facilicator, Coder)
 - Patteera Likitamnuayporn (Designer, Coder)
 - Nattaphon Rakprokobkij (Director ,Coder)
-- Pakkapol Visuttitewin (Qa manager, Coder)
+- Pakkapon Visuttitewin (Qa manager, Coder)
+
+## CI using Github Actions
+
+https://github.com/mmookptr/evaluately/actions
 
 ## Trello Board URL
 
-https://trello.com/wihpocket
+[Trello Board](https://trello.com/b/bICn1NIa/evaluately)
 
 ## Project Backlog URL
+[Iteration Plans](https://docs.google.com/document/d/1tbbW8fQMx2SEDQTjB0Jtj4mknjqA_rKx_tdUeCVFEqs/edit#heading=h.e1kzr3qblvqo)
+
+## Iteration Retrospective
+
+[Retrospective](https://docs.google.com/document/d/1__I9L3fENzzlq_ilo4gY-A2EZMFPoNFcl1jnn4KBaYM/edit?usp=sharing)
