@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
 from django.http import HttpResponseRedirect
+from django.urls import reverse
 from .models import User
 
 
@@ -13,14 +14,12 @@ def register(request):
 
 
 def get_name(request):
-    # if this is a POST request we need to process the form data
     if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
-        print("a")
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('/')
+
+            return HttpResponseRedirect(reverse('index'))
 
     else:
         form = NameForm()

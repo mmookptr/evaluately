@@ -111,16 +111,36 @@ input[type="submit"] {
 }
 
 .adminlogin {
-    border-radius: 20px;
-    border-color: rgb(0, 51, 102);
-    width: 30%;
-    padding: 8px 32px;
-    background-color: transparent;
-    margin-top: 20px;
-    margin-bottom: 10px;
+  border-radius: 20px;
+  border-color: rgb(0, 51, 102);
+  width: 30%;
+  padding: 8px 32px;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .adminbutton {
-    color: rgb(0, 51, 102) !important;
+  color: rgb(0, 51, 102) !important;
 
+}
+
+.google-logo {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.googlebutton {
+  border-radius: 20px;
+  /* background-image: url("./../img/googleicon.png"); */
+  width: 100%;
+  padding: 8px 32px;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.navbar-nav {
+  position: absolute;
+  right: 0;
 }
