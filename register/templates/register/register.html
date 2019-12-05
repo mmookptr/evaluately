@@ -9,6 +9,7 @@
         {% csrf_token %}
         {% for field in form %}
           <p>
+            {{ field.label_tag }}
             {{ field.id_username}}
             {{ field.id_password}}
             {{ field }}
