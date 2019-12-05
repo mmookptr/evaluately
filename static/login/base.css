@@ -145,6 +145,10 @@ input[type="submit"] {
   right: 0;
 }
 
+.nav-link{
+  color: white !important;
+}
+
 #id_password1, #id_password2, #id_username{
 width: 70% !important;
 margin-left: auto;
