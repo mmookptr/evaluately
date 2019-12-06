@@ -19,15 +19,14 @@ jobs:
           pip install social-auth-app-django
           pip install Pillow
       - name: Set env
-          env:
-            SECRET_KEY = 'an7$et5*ij#n23we#d(daq=gyhk5ezm)=93midlsmb)6yv2az7'
-            DEBUG = True
-            DATABASES = 'db.sqlite3'
-            TIME_ZONE = 'GMT'
-            FACEBOOK_KEY = '1564872793652319'
-            FACEBOOK_SECRET = '6c803aea3c356da3bda64f2e8bcbdaac'
-            GOOGLE_KEY = '172614718813-df6ilcdj04b0d28v9cjg1706l373uab4.apps.googleusercontent.com'
-            GOOGLE_SECRET = 'YicHkuaxIhFRRLq0wXttYHiH'
+        env: SECRET_KEY = 'an7$et5*ij#n23we#d(daq=gyhk5ezm)=93midlsmb)6yv2az7'
+          DEBUG = True
+          DATABASES = 'db.sqlite3'
+          TIME_ZONE = 'GMT'
+          FACEBOOK_KEY = '1564872793652319'
+          FACEBOOK_SECRET = '6c803aea3c356da3bda64f2e8bcbdaac'
+          GOOGLE_KEY = '172614718813-df6ilcdj04b0d28v9cjg1706l373uab4.apps.googleusercontent.com'
+          GOOGLE_SECRET = 'YicHkuaxIhFRRLq0wXttYHiH'
 
       - name: Run Django test
         run: |
