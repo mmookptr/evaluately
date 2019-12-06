@@ -20,8 +20,6 @@ jobs:
           pip install Pillow
       - name: Set Enviroment Variable
         run: |
-
-          touch db.sqlite3
           echo ::set-env name=SECRET_KEY ::an7$et5*ij#n23we#d(daq=gyhk5ezm)=93midlsmb)6yv2az7
           echo ::set-env name=DEBUG ::True
           echo ::set-env name=DATABASES ::db.sqlite3
