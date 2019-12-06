@@ -12,24 +12,24 @@ jobs:
         uses: actions/setup-python@v1
         with:
           python-version: 3.7
-      - name: Set env
-        run: |
-          ls
-
-        env: SECRET_KEY = 'an7$et5*ij#n23we#d(daq=gyhk5ezm)=93midlsmb)6yv2az7'
-          DEBUG = True
-          DATABASES = 'db.sqlite3'
-          TIME_ZONE = 'GMT'
-          FACEBOOK_KEY = '1564872793652319'
-          FACEBOOK_SECRET = '6c803aea3c356da3bda64f2e8bcbdaac'
-          GOOGLE_KEY = '172614718813-df6ilcdj04b0d28v9cjg1706l373uab4.apps.googleusercontent.com'
-          GOOGLE_SECRET = 'YicHkuaxIhFRRLq0wXttYHiH'
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install social-auth-app-django
           pip install Pillow
+      - name: Set Enviroment Variable
+        run: |
+
+          touch db.sqlite3
+          echo ::set-env name=SECRET_KEY ::an7$et5*ij#n23we#d(daq=gyhk5ezm)=93midlsmb)6yv2az7
+          echo ::set-env name=DEBUG ::True
+          echo ::set-env name=DATABASES ::db.sqlite3
+          echo ::set-env name=TIME_ZONE ::GMT
+          echo ::set-env name=FACEBOOK_KEY ::1564872793652319
+          echo ::set-env name=FACEBOOK_SECRET ::6c803aea3c356da3bda64f2e8bcbdaac
+          echo ::set-env name=GOOGLE_KEY ::172614718813-df6ilcdj04b0d28v9cjg1706l373uab4.apps.googleusercontent.com
+          echo ::set-env name=GOOGLE_SECRET ::YicHkuaxIhFRRLq0wXttYHiH
 
       - name: Run Django test
         run: |
