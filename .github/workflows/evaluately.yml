@@ -22,6 +22,7 @@ jobs:
         run: |
           echo ::set-env name=SECRET_KEY::secret
           echo ::set-env name=DEBUG::TRUE
+          touch db.sqlite3
 
       - name: Run Django test
         run: |
