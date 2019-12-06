@@ -18,6 +18,10 @@ jobs:
           pip install -r requirements.txt
           pip install social-auth-app-django
           pip install Pillow
+      - name: Set Enviroment Variable
+        run: |
+          echo ::set-env name=SECRET_KEY::secret
+          echo ::set-env name=DEBUG::TRUE
 
       - name: Run Django test
         run: |
