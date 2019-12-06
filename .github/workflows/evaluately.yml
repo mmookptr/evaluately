@@ -19,6 +19,9 @@ jobs:
           pip install social-auth-app-django
           pip install Pillow
       - name: Set env
+        run: |
+          ls
+
         env: SECRET_KEY = 'an7$et5*ij#n23we#d(daq=gyhk5ezm)=93midlsmb)6yv2az7'
           DEBUG = True
           DATABASES = 'db.sqlite3'
