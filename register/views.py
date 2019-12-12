@@ -21,7 +21,4 @@ def get_name(request):
 
             return HttpResponseRedirect(reverse('index'))
 
-    else:
-        form = NameForm()
-
     return render(request, 'register/register.html', {'form': form})

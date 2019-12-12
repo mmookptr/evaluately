@@ -1,14 +1,30 @@
-<!DOCTYPE html>
-<html>
+{% extends 'login/base.html' %}
+{% block body_block %}
 
-<body>
+<div class="container">
+    <div class="jumbotron regis">
+      <h1>Welcome, new evaluater!</h1>
+      <br>
+      <form action='{% url "register:form" %}' method="post">
+        {% csrf_token %}
+        {% for field in form %}
+          <p>
+            {{ field.label_tag }}
+            {{ field.id_username}}
+            {{ field.id_password}}
+            {{ field }}
+            {% if field.help_text %}
+              <br>
+              <small style="color:grey">{{ field.help_text }}</small>
+            {% endif %}
+            {% for error in field.errors %}
+              <p style="color: red">{{ error }}</p>
+            {% endfor %}
+          </p>
+        {% endfor %}
+        <input type="submit" value="Register">
+      </form>
+      </div>
+</div>
 
-  <h2>Registeration</h2>
-  <form action='{% url "register:form" %}' method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Register">
-  </form>
-</body>
-
-</html>
+{% endblock %}
