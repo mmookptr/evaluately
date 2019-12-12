@@ -28,6 +28,10 @@ jobs:
           GOOGLE_SECRET: ${{ secrets.GOOGLE_SECRET }}
         run: |
           python manage.py test
+      - name: Codecov
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        run: echo "RUN CODECOV HERE"
   deploy:
     needs: build
     runs-on: ubuntu-latest
