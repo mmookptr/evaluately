@@ -3,7 +3,8 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Actions Status](https://github.com/mmookptr/evaluately/workflows/Evaluately/badge.svg)](https://github.com/mmookptr/evaluately/actions)
 [![GitHub issues](https://img.shields.io/github/issues/mmookptr/evaluately.svg)](https://GitHub.com/mmookptr/evaluately/issues/)
-[![Tweeting](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/)
+[![Tweeting](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Evaluately%20is%20awesome!)
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://evaluately.herokuapp.com/)
 
 > This repository is part of ISP2019 course
 
@@ -64,9 +65,11 @@ via HTTPS
 - Nattaphon Rakprokobkij (Director ,Coder)
 - Pakkapon Visuttitewin (Qa manager, Coder)
 
-## CI using Github Actions
+## CI/CD with GitHub Actions
 
 https://github.com/mmookptr/evaluately/actions
+
+GitHub Actions provide huge versatility and the integration is almost seamless. Please check GitHub actions for yourself, create a workflow of your own and see whether/how it improves your current development life cycle.
 
 ## Trello Board URL
 
