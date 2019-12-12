@@ -1,3 +1,4 @@
+import django_heroku
 """
 Django settings for evaluately project.
 
@@ -149,3 +150,5 @@ LOGOUT_URL = 'logout'
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = config('GOOGLE_KEY')
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = config('GOOGLE_SECRET')
+
+django_heroku.settings(locals())
