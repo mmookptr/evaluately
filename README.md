@@ -1,7 +1,7 @@
 # Evaluately
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![Actions Status](https://github.com/mmookptr/evaluately/workflows/Python%20application/badge.svg)](https://github.com/mmookptr/evaluately/actions)
+[![Actions Status](https://github.com/mmookptr/evaluately/workflows/Evaluately/badge.svg)](https://github.com/mmookptr/evaluately/actions)
 [![GitHub issues](https://img.shields.io/github/issues/mmookptr/evaluately.svg)](https://GitHub.com/mmookptr/evaluately/issues/)
 [![Tweeting](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/)
 
