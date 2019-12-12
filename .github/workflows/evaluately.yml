@@ -22,7 +22,7 @@ jobs:
         run: |
           echo ::set-env name=SECRET_KEY ::'an7$et5*ij#n23we#d(daq=gyhk5ezm)=93midlsmb)6yv2az7'
           echo ::set-env name=DEBUG ::True
-          echo ::set-env name=DATABASES ::db.sqlite3
+          echo ::set-env name=DATABASE_URL ::sqlite:///db.sqlite3
           echo ::set-env name=TIME_ZONE ::GMT
           echo ::set-env name=FACEBOOK_KEY ::1564872793652319
           echo ::set-env name=FACEBOOK_SECRET ::6c803aea3c356da3bda64f2e8bcbdaac
