@@ -1,6 +1,6 @@
 # Evaluately
 
-[![Actions Status](https://github.com/mmookptr/evaluately/workflows/Python%20application/badge.svg)](https://github.com/mmookptr/evaluately/actions)
+[![Actions Status](https://github.com/mmookptr/evaluately/workflows/Evaluately/badge.svg)](https://github.com/mmookptr/evaluately/actions)
 
 > This repository is part of ISP2019 course
 
@@ -70,6 +70,7 @@ https://github.com/mmookptr/evaluately/actions
 [Trello Board](https://trello.com/b/bICn1NIa/evaluately)
 
 ## Project Backlog URL
+
 [Iteration Plans](https://docs.google.com/document/d/1tbbW8fQMx2SEDQTjB0Jtj4mknjqA_rKx_tdUeCVFEqs/edit#heading=h.e1kzr3qblvqo)
 
 ## Iteration Retrospective
