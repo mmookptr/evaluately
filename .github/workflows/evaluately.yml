@@ -18,18 +18,14 @@ jobs:
           pip install -r requirements.txt
           pip install social-auth-app-django
           pip install Pillow
-      - name: Set Enviroment Variable
-        run: |
-          echo ::set-env name=SECRET_KEY ::'an7$et5*ij#n23we#d(daq=gyhk5ezm)=93midlsmb)6yv2az7'
-          echo ::set-env name=DEBUG ::True
-          echo ::set-env name=DATABASE_URL ::sqlite:///db.sqlite3
-          echo ::set-env name=TIME_ZONE ::GMT
-          echo ::set-env name=FACEBOOK_KEY ::1564872793652319
-          echo ::set-env name=FACEBOOK_SECRET ::6c803aea3c356da3bda64f2e8bcbdaac
-          echo ::set-env name=GOOGLE_KEY ::172614718813-df6ilcdj04b0d28v9cjg1706l373uab4.apps.googleusercontent.com
-          echo ::set-env name=GOOGLE_SECRET ::YicHkuaxIhFRRLq0wXttYHiH
-
       - name: Run Django test
+        env:
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+          DEBUG: ${{ secrets.DEBUG }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          TIME_ZONE: ${{ secrets.TIME_ZONE }}
+          GOOGLE_KEY: ${{ secrets.GOOGLE_KEY }}
+          GOOGLE_SECRET: ${{ secrets.GOOGLE_SECRET }}
         run: |
           python manage.py test
   deploy:
