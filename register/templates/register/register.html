@@ -1,4 +1,5 @@
 {% extends 'login/base.html' %}
+{% load static %}
 {% block body_block %}
 
 <div class="container">
@@ -7,22 +8,32 @@
       <br>
       <form action='{% url "register:form" %}' method="post">
         {% csrf_token %}
-        {% for field in form %}
-          <p>
-            {{ field.label_tag }}
-            {{ field.id_username}}
-            {{ field.id_password}}
-            {{ field }}
-            {% if field.help_text %}
-              <br>
-              <small style="color:grey">{{ field.help_text }}</small>
-            {% endif %}
-            {% for error in field.errors %}
-              <p style="color: red">{{ error }}</p>
-            {% endfor %}
-          </p>
-        {% endfor %}
+        <input type="text" name="username" maxlength="150" autofocus="" required id="id_username" 
+        placeholder="Username">
+        <br>
+        <br>
+        <input type="password" name="password1" autofocus="" required id="id_password1" 
+        placeholder="Password" pattern="(?=.*\d)(?=.*[a-z]).{8,}">
+        <input type="password" name="password2" autofocus="" required id="id_password2" 
+        placeholder="Confirm password" pattern="(?=.*\d)(?=.*[a-z]).{8,}">
+        <small class ="passwordrequirement">
+          <div>Your password must be longer than 8 character</div>
+          <div>Your password must contains both alphabet and number</div>
+        </small>
+
+        <label for="is_admin">Admin code: </label>
+        <input type="text" name="is_admin" autofocus="" id="is_admin"
+        placeholder="">
+        <small class ="passwordrequirement">
+          <div>If you are registering as an Admin please enter admin code</div>
+        </small>
+
+        <br>
         <input type="submit" value="Register">
+            <div class="col-md-8 mx-auto social-container my-2 order-md-1">
+                <a class="googlebutton" href="{% url 'social:begin' 'google-oauth2' %}">
+                <img class="google-logo" src="{% static 'img/googleicon.png' %}" alt="">Register with Google</a>
+            </div>        
       </form>
       </div>
 </div>

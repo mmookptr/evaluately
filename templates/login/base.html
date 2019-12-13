@@ -30,12 +30,11 @@
             <ul class="navbar-nav">
                 {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <!-- <a class="nav-link" href="{% url 'logout' %}">logout</!--> -->
-                    <a class="nav-link" href="{% url 'logout' %}">logout</a>
+                    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
                 </li>
                 {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'login:user_login' %}">login</a>
+                    <a class="nav-link" href="{% url 'login:user_login' %}">Login</a>
                 </li>
                 {% endif %}
             </ul>

@@ -5,7 +5,7 @@
 <p class="text">Evaluately</p>
     <div class="welcome-message">
         {% if user.is_authenticated %}
-            <h2>Hello {{user.username}}</h2>
+            <h2>Hello {{user.username}} Is Admin? {{user.appuser.is_admin}}</h2>
             {% for ass in backends.associated %}
                 {% if ass.provider == 'facebook' %}
                 <div class="col-md-6 text-center">
