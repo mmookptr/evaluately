@@ -3,6 +3,7 @@ from .models import AppUser
 from django.contrib.auth.forms import UserCreationForm
 
 class AppUserCreationForm(UserCreationForm):
+    is_admin = forms.CharField(required=False)
     class Meta:
         model = AppUser
         fields = ('username', 'password1', 'password2', 'is_admin')
