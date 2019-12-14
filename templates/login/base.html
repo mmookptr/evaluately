@@ -29,13 +29,23 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 {% if user.is_authenticated %}
-                <li class="nav-item">
-                    <!-- <a class="nav-link" href="{% url 'logout' %}">logout</!--> -->
-                    <a class="nav-link" href="{% url 'logout' %}">logout</a>
-                </li>
+                    {% if request.user.appuser.is_admin == 'True' %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Admin {{user.username}}</a>
+
+                         </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link" href=""> {{user.username}}</a>
+                         </li>
+
+                    {% endif %}
+                    <li class="nav-item logout-nav">
+                        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                    </li>
                 {% else %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'login:user_login' %}">login</a>
+                <li class="nav-item login-anv">
+                    <a class="nav-link" href="{% url 'login:user_login' %}">Login</a>
                 </li>
                 {% endif %}
             </ul>

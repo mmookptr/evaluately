@@ -163,3 +163,18 @@ border: 1px solid #ced4da;
 .regis {
   margin-top: 60px;
 }
+
+#adminpass{
+  width: 50% !important;
+  margin-left: auto;
+  border-color: rgba(0, 0, 0, 0) !important;
+  border-bottom-color: rgb(0, 51, 102) !important;
+  padding: 10px 32px !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+}
+
+.passwordrequirement{
+  color: darkgray;
+}

@@ -1,9 +1,9 @@
 from django import forms
 from login.models import UserProfileInfo
-from django.contrib.auth.models import User
+from register.models import AppUser
 
 class UserForm(forms.ModelForm):
     password = forms.CharField(widget=forms.PasswordInput())
     class Meta():
-        model = User
+        model = AppUser
         fields = ('username','password','email')
