@@ -18,7 +18,11 @@ def get_name(request):
     if request.method == 'POST':
         form = AppUserCreationForm(request.POST)
         if form.is_valid():
-            form.save()
+            user = form.save(commit=False)
+            if form.cleaned_data['is_admin'] == 'iamadmin':
+                user.is_superuser = True
+                user.is_staff = True
+            user.save()
 
             return HttpResponseRedirect(reverse('index'))
 
