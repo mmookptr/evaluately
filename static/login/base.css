@@ -191,3 +191,40 @@ border: 1px solid #ced4da;
 .status{
   color: rgb(0, 51, 102)!important;
 }
+
+.results{
+  text-align: center;
+  margin: 0px 0px 0px !important;
+  padding-left: 0px;
+}
+
+.voteagin{
+  width: 20% !important;
+  font-size: medium !important;
+}
+
+.votebutton{
+  width: 20% !important;
+}
+
+.backbutton{
+  border-radius: 20px;
+  border-color: rgb(0, 51, 102);
+  width: 20%;
+  padding: 8px 32px;
+  background-color: transparent;
+  margin-left: 400px;
+  margin-bottom: -30px;
+}
+
+.all-criteria{
+  overflow: scroll;
+}
+
+.each-criteria{
+  margin-top: 10px;
+  border-radius: 10px !important;
+  color: rgb(0, 51, 102) !important;
+  border-color: transparent !important;
+  background-color: rgb(204, 214, 224) !important;
+}

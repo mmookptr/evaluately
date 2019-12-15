@@ -32,6 +32,7 @@ urlpatterns = [
     path("oauth/", include("social_django.urls", namespace="social")),
     path("logout/", login_views.user_logout, name="logout"),
     path("vote", include("polls.urls")),
+
 ]
 
 admin.site.site_header = "Evaluately Admin Panel"
