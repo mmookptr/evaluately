@@ -5,15 +5,15 @@
 <div class="container">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<h1>{{ question.question_text }}</h1>
+<h1>{{ criteria.question_text }}</h1>
 <br>
 <ul class= "results">
-{% for choice in question.choice_set.all %}
+{% for choice in criteria.entrant_set.all %}
 <p>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</p>
 {% endfor %}
 </ul>
 
-<a href="{% url 'polls:detail' question.id %}">
+<a href="{% url 'polls:detail' criteria.id %}">
     <button type="button" class="btn btn-primary btn-lg voteagin">Vote again?</button>
 </a>
 

@@ -26,6 +26,7 @@ class FinalView(generic.ListView):
 class DetailView(generic.DetailView):
     model = Criteria
     template_name = 'polls/detail.html'
+    context_object_name = 'criteria'
 
     def get_queryset(self):
         """Excludes any questions that aren't published yet."""

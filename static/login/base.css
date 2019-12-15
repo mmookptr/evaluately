@@ -228,3 +228,15 @@ border: 1px solid #ced4da;
   border-color: transparent !important;
   background-color: rgb(204, 214, 224) !important;
 }
+
+.summary{
+  margin-top: 5px;
+  border-radius: 10px !important;
+  color: rgb(0, 51, 102) !important;
+  border-color: transparent !important;
+  background-color: rgb(115, 143, 171) !important;
+}
+  
+  .summary-list{
+    padding-left: 0px !important;
+}

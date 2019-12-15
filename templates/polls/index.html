@@ -8,7 +8,8 @@
 <div class="container all-criteria">
         <h1>Avaiable Categories</h1>
         {% for question in latest_question_list %}
-        <li class = "list-group-item each-criteria active"><a href="{% url 'polls:detail' question.id %}" class= 'each-criteria'>{{ question.question_text }}</a></li>
+        {{question.id}}
+        <li class = "list-group-item each-criteria active"><a href="{% url 'polls:detail'   question.id %}" class= 'each-criteria'>{{ question.question_text }}</a></li>
         {% endfor %}
         </ul>
     {% else %}
