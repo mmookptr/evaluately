@@ -23,16 +23,16 @@ from django.contrib.auth import views as auth_views
 app_name = "evaluately"
 
 urlpatterns = [
-
-    path('admin/logout/', login_views.user_logout),
-    path('admin/', admin.site.urls),
-    path('register/', include('register.urls')),
-    path('', login_views.index, name='index'),
-    path('special/', login_views.special, name='special'),
-    path('login/', include('login.urls')),
-    path('oauth/', include('social_django.urls', namespace='social')),
+    path("admin/logout/", login_views.user_logout),
+    path("admin/", admin.site.urls),
+    path("register/", include("register.urls")),
+    path("", login_views.index, name="index"),
+    path("special/", login_views.special, name="special"),
+    path("login/", include("login.urls")),
+    path("oauth/", include("social_django.urls", namespace="social")),
     path("logout/", login_views.user_logout, name="logout"),
+    path("vote", include("polls.urls")),
 ]
 
-admin.site.site_header = 'Evaluately Admin Panel'
-admin.site.site_title = 'Evaluately Title'
+admin.site.site_header = "Evaluately Admin Panel"
+admin.site.site_title = "Evaluately Title"
