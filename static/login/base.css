@@ -187,3 +187,7 @@ border: 1px solid #ced4da;
 .dropdown-menu{
   top: 110% !important;
 }
+
+.status{
+  color: rgb(0, 51, 102) !important;
+}
