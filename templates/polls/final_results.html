@@ -7,8 +7,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <ul class= "results">
-{% for question in questions%}
-<li>{{question.question_text}}
+{% for criteria in criterian%}
+<li>{{criteria.question_text}}
 <ul>
 {% for choice in question.choice_set.all() %}
 {% endfor %}

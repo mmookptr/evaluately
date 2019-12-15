@@ -36,7 +36,8 @@ ALLOWED_HOSTS = ["127.0.0.1", "evaluately.herokuapp.com", "localhost"]
 # Application definition
 
 INSTALLED_APPS = [
-    "polls.apps.PollsConfig",
+
+    "votes.apps.VoteAppConfig",
     "register",
     "login",
     "social_django",
@@ -66,7 +67,7 @@ ROOT_URLCONF = "evaluately.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [TEMPLATE_DIR,],
+        "DIRS": [TEMPLATE_DIR, ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -87,7 +88,8 @@ WSGI_APPLICATION = "evaluately.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {"default": dj_database_url.parse(config("DATABASE_URL"), conn_max_age=600)}
+DATABASES = {"default": dj_database_url.parse(
+    config("DATABASE_URL"), conn_max_age=600)}
 
 
 # Password validation
@@ -97,9 +99,9 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
     },
-    {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",},
-    {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",},
-    {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",},
+    {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator", },
+    {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator", },
+    {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator", },
 ]
 
 AUTHENTICATION_BACKENDS = (
