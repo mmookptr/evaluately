@@ -30,19 +30,28 @@
             <ul class="navbar-nav">
                 {% if user.is_authenticated %}
                     {% if request.user.appuser.is_admin == 'True' %}
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Admin {{user.username}}</a>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="usericon" src="{% static 'img/admin-icon.svg' %}" alt=""> {{user.username}}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <p class="nav-link">User accout</p>
+                        <a class="nav-link logout" href="{% url 'logout' %}">Logout</a>
 
-                         </li>
+                        </div>
+                        </li>
                     {% else %}
-                        <li class="nav-item">
-                            <a class="nav-link" href=""> {{user.username}}</a>
-                         </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="usericon" src="{% static 'img/user-icon.svg' %}" alt=""> {{user.username}}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="nav-link logout" href="{% url 'logout' %}">Logout</a>
+
+                        </div>
+                        </li>
 
                     {% endif %}
-                    <li class="nav-item logout-nav">
-                        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-                    </li>
                 {% else %}
                 <li class="nav-item login-anv">
                     <a class="nav-link" href="{% url 'login:user_login' %}">Login</a>
