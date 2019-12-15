@@ -2,7 +2,7 @@
 {% block body_block %}
 {% if latest_question_list %}
 <div class= "jumbotron">
-<a href="/finalresults">
+<a href="{% url 'polls:finalresults'%}">
     <button type="button" class="backbutton">Back</button>
 </a>
 <div class="container all-criteria">
