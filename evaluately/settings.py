@@ -36,6 +36,7 @@ ALLOWED_HOSTS = ["127.0.0.1", "evaluately.herokuapp.com", "localhost"]
 # Application definition
 
 INSTALLED_APPS = [
+    "polls.apps.PollsConfig",
     "register",
     "login",
     "social_django",

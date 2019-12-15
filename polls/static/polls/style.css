@@ -1,0 +1,35 @@
+body {
+  background: white url("images/background.gif") no-repeat;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Helvetica;
+  line-height: 50px;
+}
+.container {
+  width: 30rem;
+  height: 20rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: auto;
+
+  backdrop-filter: blur(5px);
+  text-align: center;
+}
+
+h1 {
+  color: #900c3f;
+  font-weight: bolder;
+  text-shadow: 0 0 3px black, 0 0 5px whitesmoke;
+}
+li a {
+  color: #900c3f;
+  font-weight: bolder;
+  text-shadow: 0 0 3px white, 0 0 5px whitesmoke;
+}
+
+ul {
+  font-weight: bold;
+}
