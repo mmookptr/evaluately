@@ -146,7 +146,8 @@ input[type="submit"] {
 }
 
 .nav-link{
-  color: white !important;
+  color:white !important;
+  
 }
 
 #id_password1, #id_password2, #id_username{
@@ -177,4 +178,12 @@ border: 1px solid #ced4da;
 
 .passwordrequirement{
   color: darkgray;
+}
+
+.logout{
+  color: red !important;
+}
+
+.dropdown-menu{
+  top: 110% !important;
 }
