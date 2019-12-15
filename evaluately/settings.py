@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     "polls.apps.PollsConfig",
     "register",
     "login",
-    "vote",
     "social_django",
     "social_core",
     "django.contrib.admin",
