@@ -2,13 +2,11 @@
 {% block body_block %}
 {% if latest_question_list %}
 <div class= "jumbotron">
-<a href="{% url 'polls:finalresults'%}">
-    <button type="button" class="backbutton">Back</button>
-</a>
+
 <div class="container all-criteria">
         <h1>Avaiable Categories</h1>
+        <br>
         {% for question in latest_question_list %}
-        {{question.id}}
         <li class = "list-group-item each-criteria active"><a href="{% url 'polls:detail'   question.id %}" class= 'each-criteria'>{{ question.question_text }}</a></li>
         {% endfor %}
         </ul>
@@ -17,5 +15,8 @@
     {% endif %}
 </div>
 </div>
+    <a href="{% url 'polls:finalresults'%}">
+    <button type="button" class="resultbutton">All results</button>
+</a>
 
 {% endblock %}
