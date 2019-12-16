@@ -5,6 +5,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/mmookptr/evaluately.svg)](https://GitHub.com/mmookptr/evaluately/issues/)
 [![Tweeting](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Evaluately%20is%20awesome!)
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://evaluately.herokuapp.com/)
+[![ForTheBadge powered-by-electricity](http://ForTheBadge.com/images/badges/powered-by-electricity.svg)](http://ForTheBadge.com)
 
 > This repository is part of ISP2019 course
 
