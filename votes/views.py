@@ -13,7 +13,7 @@ class IndexView(generic.ListView):
 
     def get_queryset(self):
         """Return the last five published questions."""
-        return Criteria.objects.order_by('-pub_date')[:5]
+        return Criteria.objects.order_by('-pub_date')[:20]
 
 class FinalView(generic.ListView):
     template_name = 'polls/final_results.html'
@@ -21,7 +21,7 @@ class FinalView(generic.ListView):
 
     def get_queryset(self):
         """Return the last five published questions."""
-        return Criteria.objects.order_by('-pub_date')[:5]
+        return Criteria.objects.order_by('-pub_date')[:20]
 
 class DetailView(generic.DetailView):
     model = Criteria
