@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <ul class= "results">
 {% for criteria in criterian %}
-<li class = "list-group-item each-criteria active">{{criteria.question_text}}
+<li class = "list-group-item each-criteria active" style="font-size: medium">{{criteria.question_text}}
 <ul class="summary-list">
 {% for entrant in criteria.entrant_set.all %}
 <li class = "list-group-item  summary active">

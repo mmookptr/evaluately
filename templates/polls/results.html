@@ -1,6 +1,9 @@
 {% extends 'login/base.html' %}
 {% block body_block %}
 
+<a href="{% url 'polls:detail' criteria.id %}">
+    <button type="button" class="btn btn-primary btn-lg voteagin">Vote again?</button>
+</a>
 <div class= "jumbotron resultpage">
 <div class="container">
 
@@ -13,9 +16,6 @@
 {% endfor %}
 </ul>
 
-<a href="{% url 'polls:detail' criteria.id %}">
-    <button type="button" class="btn btn-primary btn-lg voteagin">Vote again?</button>
-</a>
 
 </div>
 </div>
