@@ -38,6 +38,11 @@
         <a href="/register/">
             <button type="button" class="btn btn-primary btn-lg">register</button>
         </a>
+        <div class="col-sm-12 mt-2 text-center">
+            <button class="btn btn-primary btn-lg reviewbutton">
+                 <a href="{% url 'polls:finalresults'%}" style="color: rgb(0, 51, 102)">Review all results</a>
+            </button>
+         </div>
 
         {% endif %}
     </div>
