@@ -1,5 +1,8 @@
 # Evaluately
 
+[![ForTheBadge powered-by-electricity](http://ForTheBadge.com/images/badges/powered-by-electricity.svg)](http://ForTheBadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
+
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Actions Status](https://github.com/mmookptr/evaluately/workflows/Evaluately/badge.svg)](https://github.com/mmookptr/evaluately/actions)
 [![GitHub issues](https://img.shields.io/github/issues/mmookptr/evaluately.svg)](https://GitHub.com/mmookptr/evaluately/issues/)
