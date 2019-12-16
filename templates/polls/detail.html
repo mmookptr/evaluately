@@ -1,13 +1,26 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<h1>{{ question.question_text }}</h1>
+{% extends 'login/base.html' %}
+{% block body_block %}
 
+<div class= "jumbotron">
+<div class="container">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<h1>{{ criteria.question_text }}</h1>
+<br>
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
-<form action="{% url 'polls:vote' question.id %}" method="post">
+<form action="{% url 'polls:vote' criteria.id %}" method="post">
     {% csrf_token %}
-    {% for choice in question.choice_set.all %}
-    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+    {% for choice in criteria.entrant_set.all %}
+    <input class="form-check-input" type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
     <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
     {% endfor %}
-    <input type="submit" value="Vote">
+    <input type="submit" value="Vote" class="votebutton">
+    <br>
+    <a href="/vote">
+        <button type="button" class="backbutton">Back</button>
+    </a>
 </form>
+</div>
+</div>
+
+{% endblock %}

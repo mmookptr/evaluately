@@ -15,10 +15,18 @@ class IndexView(generic.ListView):
         """Return the last five published questions."""
         return Criteria.objects.order_by('-pub_date')[:5]
 
+class FinalView(generic.ListView):
+    template_name = 'polls/final_results.html'
+    context_object_name = 'criterian'
+
+    def get_queryset(self):
+        """Return the last five published questions."""
+        return Criteria.objects.order_by('-pub_date')[:5]
 
 class DetailView(generic.DetailView):
     model = Criteria
     template_name = 'polls/detail.html'
+    context_object_name = 'criteria'
 
     def get_queryset(self):
         """Excludes any questions that aren't published yet."""
