@@ -4,7 +4,7 @@
 <div class= "jumbotron">
 
 <div class="container all-criteria">
-        <h1>Avaiable Categories</h1>
+        <h1>Available Categories</h1>
         <br>
         {% for question in latest_question_list %}
         <li class = "list-group-item each-criteria active"><a href="{% url 'polls:detail'   question.id %}" class= 'each-criteria'>{{ question.question_text }}</a></li>
